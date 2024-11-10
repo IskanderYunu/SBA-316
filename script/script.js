@@ -5,6 +5,10 @@ function main() {
   const screen = document.querySelector(".mainScreen");
   const paragraphs = document.querySelectorAll("p");
   paragraphs.forEach((para) => (para.style.color = "pink"));
+  /*function callBack(para) {
+    para.style.color = pink
+}
+paragraphs.forEach(callBack) */
 
   //creating new element
   const newpara = document.createElement("p");
@@ -38,3 +42,6 @@ function onSubmit(evt) {
     alert(`You shall not PASS! You are only ${age}!!!`);
   }
 }
+//Event Listener
+//(para) => (para.style.color = "pink")
+addEventListener("resize", (window, ev) => console.log(window.innerWidth));
