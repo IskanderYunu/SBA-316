@@ -23,6 +23,8 @@ function hover() {
   const changeColor = document.querySelector(".mouseHover");
   changeColor.style.color = "red";
 }
+
+// Test
 const myForm = document.getElementById("myForm");
 myForm.addEventListener("submit", onSubmit);
 function onSubmit(evt) {
