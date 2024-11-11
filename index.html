@@ -5,19 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
     <script defer src="./script/script.js"></script>
-    <title>SBA</title>
+    <title>Fireworks</title>
+    <style>
+      button {
+        padding: 5px;
+        margin: 10px;
+        border-radius: 20px;
+        background-color: #A9A9A9;
+      }
+      .boomButton {
+        color: red;
+        font-size: large;
+        background-color: red;
+        padding: 20px;
+      }
+      section {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+      }
+    </style>
   </head>
   <body>
-    <h1 id="heading">Cool Webpage</h1>
-    <button onclick="main()">Button</button>
-    <button onclick="changeTitleColor()">Change Title Color</button>
-    <button onclick="unhide()">Unhide</button>
-    <p hidden class="sneaky">Invisible Text</p>
-    <h2 onmouseover="hover()" class="mouseHover">Hover Over Me</h2>
-    <p>One</p>
-    <p>Two</p>
-    <p>Three</p>
-    <p id="width" >Screen</p>
+    <header>
+    <nav>
+    
+    <nav class="navbar">
+      <ul class="nav-links">
+        <h1 id="heading">💣The Fuse Vault💣</h1>
+      </ul>
+  </nav>
+  </nav>
+</header>
+<section>
+    <button onclick="main()" class="boomButton">
+       </button>
+    <button onclick="changeTitleColor()">Don't Click the Red Button!</button>
+ 
+    <h2 onmouseover="hover()" class="mouseHover">Exoplosive Fun Awaits!</h2>
+    <p></p>
+   
+  
+    <p id="width" >Enter Requirement</p>
+    <!--Over type of Form/Input-->
     <form id="myForm"> 
     <label>Your Age:
         <input
@@ -30,7 +61,12 @@
     </label>
 
     </br>
-    <button type="submit">Submit</button>
+    <button type="submit">Enter</button>
+  </br>
+    <button onclick="unhide()">Unhide</button>
+    <p hidden class="sneaky">Get 20% Off Code: BOOMSTICK24</p>
     </form>
+
+  </section>
   </body>
 </html>
